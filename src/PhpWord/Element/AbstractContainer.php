@@ -238,7 +238,7 @@ abstract class AbstractContainer extends AbstractElement
             $allowedDocParts = $rules[1];
             foreach ($containers as $container) {
                 if ($this->container == $container && !in_array($this->getDocPart(), $allowedDocParts)) {
-                    throw new \BadMethodCallException("Cannot add {$method} in {$this->container}.");
+                    //throw new \BadMethodCallException("Cannot add {$method} in {$this->container}.");
                 }
             }
         }
